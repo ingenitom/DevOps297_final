@@ -3,7 +3,7 @@ Contributors: [Matthew Ingenito](https://github.com/ingenitom)
 and [Jorge Aguilar](https://github.com/Jav-aguilar)
 
 ## Overview
-This goal of this project was to create a Minecraft spigget server that has been modified with added plugins. Also to be able to run the server locally on your laptop, on a virtual machine (Docker or Vagrant) on your laptop, and finally on a cloud-hosted machine(Heroku or AWS). 
+This goal of this project was to create a Minecraft spigot server that has been modified with added plugins. Also to be able to run the server locally on your laptop, on a virtual machine (Docker or Vagrant) on your laptop, and finally on a cloud-hosted machine(Heroku or AWS). 
 
 ## Setup
 1. Fork this repo
