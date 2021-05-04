@@ -1,0 +1,23 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+
+  config.vm.box = "bento/ubuntu-18.04"
+
+  config.vm.network "forwarded_port", guest: 25565, host: 25565
+
+  config.vm.synced_folder ".", "/mc_data"
+
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update
+    sudo apt-get upgrade 
+    sudo apt-get -y install default-jre 
+    cd /mc_data
+    java -Xmx1G -Xms1G -jar server.jar nogui
+  SHELL
+end
