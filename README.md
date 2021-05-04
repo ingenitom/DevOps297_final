@@ -13,7 +13,7 @@ This goal of this project was to create a Minecraft spigot server that has been 
 5. then clone the forked repo: `git clone <forked_repo_url>`
 6. run `ls` on the command line to make sure the repo is in the directory
 
-###Locally
+### Locally
 1. Cd into the `Working_MC_Server` by doing `cd DevOps297_final/Working_MC_Server/`
 2. Then launch the Minecraft Spigot Server: `java -Xmx1G -Xms1G -jar server.jar nogui`
 3. To stop the server on the terminal comand line type `stop` and then enter
